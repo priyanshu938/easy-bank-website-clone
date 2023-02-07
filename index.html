@@ -17,8 +17,8 @@
             <div class="logo-img">
                 <img src="./images/logo.svg" alt="">
             </div>
-            <div class="nav-div responsive">
-                <ul class=" flex nav-links">
+            <div class="nav-div" id="nav-links">
+                <ul class=" flex nav-links responsive hide">
                     <li><a href="#">Home</a> </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
@@ -29,9 +29,11 @@
             <div class="request-invite-button hide ">
                 request invite
             </div>
-            <div class="hamburger-icon">
+            <div class="hamburger-icon hide view" id="nav-toggle">
                 <img src="./images/icon-hamburger.svg" alt="">
-
+            </div>
+            <div class="close-button hide " id="close">
+                <img src="./images/icon-close.svg" alt="">
             </div>
 
         </div>
@@ -194,6 +196,23 @@
     </section>
     </div>
 
+    <script>
+        const toggleButton = document.querySelector('#nav-toggle');
+        const navLinks = document.querySelector('#nav-links');
+        const closeButton = document.querySelector('#close');
+        toggleButton.addEventListener('click', () => {
+            //add hide class to toggleButton using javascript
+            toggleButton.classList.remove('view')
+            navLinks.classList.add('responsive')
+            closeButton.classList.add('view')
+        })
+        closeButton.addEventListener('click', () => {
+            //add hide class to toggleButton using javascript
+            toggleButton.classList.add("view")
+            navLinks.classList.remove('responsive')
+            closeButton.classList.add('hide')
+        })
+    </script>
 </body>
 
 </html>

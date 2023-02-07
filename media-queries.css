@@ -5,8 +5,12 @@
     padding-block: 1rem;
   }
   .responsive {
+    position: absolute;
     flex-direction: column;
-    display: none;
+    top: 3rem;
+    left: 0;
+    background-color: var(--primary-white);
+    width: 100%;
   }
   .nav-links {
     flex-direction: column;
@@ -14,6 +18,9 @@
   }
   .hide {
     display: none;
+  }
+  .view {
+    display: block;
   }
   .home-content {
     width: 50%;

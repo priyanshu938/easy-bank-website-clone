@@ -125,7 +125,8 @@ nav {
 .nav-links li a {
   color: var(--secondary-grayish-blue);
 }
-.hamburger-icon {
+.hamburger-icon,
+.close-button {
   display: none;
 }
 
