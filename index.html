@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>EasyBank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 
 <body>
@@ -16,8 +17,8 @@
             <div class="logo-img">
                 <img src="./images/logo.svg" alt="">
             </div>
-            <div class="nav-div">
-                <ul class="flex nav-links">
+            <div class="nav-div responsive">
+                <ul class=" flex nav-links">
                     <li><a href="#">Home</a> </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
@@ -25,9 +26,14 @@
                     <li><a href="#">Careers</a></li>
                 </ul>
             </div>
-            <div class="request-invite-button  ">
+            <div class="request-invite-button hide ">
                 request invite
             </div>
+            <div class="hamburger-icon">
+                <img src="./images/icon-hamburger.svg" alt="">
+
+            </div>
+
         </div>
     </nav>
     <!-- home content -->
@@ -182,7 +188,7 @@
                 <div class="request-invite-button footer-request-invite ">
                     Request invite
                 </div>
-                <p>© Easybank. All Rights Reserved</p>
+                <p class="copyright-text">© Easybank. All Rights Reserved</p>
             </div>
         </div>
     </section>

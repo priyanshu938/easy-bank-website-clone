@@ -1,0 +1,96 @@
+@media screen and (max-width: 991px) {
+  .container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-block: 1rem;
+  }
+  .responsive {
+    flex-direction: column;
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hide {
+    display: none;
+  }
+  .home-content {
+    width: 50%;
+  }
+  .hamburger-icon {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .why-cards {
+    justify-content: space-evenly;
+  }
+  .why-card {
+    max-width: 18rem;
+  }
+
+  .article-cards {
+    justify-content: space-evenly;
+  }
+  .article-card {
+    max-width: 18rem;
+  }
+  .footer-logo-img {
+    text-align: center;
+  }
+  .footer-div {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-half,
+  .second-half {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .second-half {
+    align-items: center;
+  }
+  .part-1,
+  .part-2 {
+    align-items: center;
+  }
+  .footer-icons {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-block: 1 rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .heading2 {
+    font-size: 1.5rem;
+  }
+  .heading3 {
+    font-size: 1rem;
+  }
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .home-content {
+    width: 90%;
+  }
+
+  .home-image {
+    width: 50%;
+  }
+}
