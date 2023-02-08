@@ -4,30 +4,47 @@
     margin-right: 3rem;
     padding-block: 1rem;
   }
-  .responsive {
+  .hide {
+    display: none;
+  }
+
+  .main-nav {
+    margin: 0;
+    padding: 1rem;
+  }
+  .nav-div {
     position: absolute;
-    flex-direction: column;
-    top: 3rem;
-    left: 0;
     background-color: var(--primary-white);
+    left: -100%;
+    top: 3rem;
     width: 100%;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
   }
   .nav-links {
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
   }
-  .hide {
+  .nav-div.active {
+    left: 0;
+  }
+  .hamburger-icon.hide {
     display: none;
   }
-  .view {
+  .close-button.view {
     display: block;
   }
+
   .home-content {
     width: 50%;
   }
   .hamburger-icon {
     display: block;
     margin-top: 1rem;
+  }
+  .close-button {
+    margin-top: 0.5rem;
   }
 }
 

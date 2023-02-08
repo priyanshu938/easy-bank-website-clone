@@ -17,8 +17,8 @@
             <div class="logo-img">
                 <img src="./images/logo.svg" alt="">
             </div>
-            <div class="nav-div" id="nav-links">
-                <ul class=" flex nav-links responsive hide">
+            <div class="nav-div " id="nav-links">
+                <ul class=" flex nav-links  ">
                     <li><a href="#">Home</a> </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
@@ -29,10 +29,10 @@
             <div class="request-invite-button hide ">
                 request invite
             </div>
-            <div class="hamburger-icon hide view" id="nav-toggle">
+            <div class="hamburger-icon" id="nav-toggle">
                 <img src="./images/icon-hamburger.svg" alt="">
             </div>
-            <div class="close-button hide " id="close">
+            <div class="close-button" id="close">
                 <img src="./images/icon-close.svg" alt="">
             </div>
 
@@ -197,20 +197,18 @@
     </div>
 
     <script>
-        const toggleButton = document.querySelector('#nav-toggle');
-        const navLinks = document.querySelector('#nav-links');
-        const closeButton = document.querySelector('#close');
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const closeButton = document.getElementById('close');
         toggleButton.addEventListener('click', () => {
-            //add hide class to toggleButton using javascript
-            toggleButton.classList.remove('view')
-            navLinks.classList.add('responsive')
-            closeButton.classList.add('view')
+            toggleButton.classList.toggle('hide')
+            navLinks.classList.toggle('active')
+            closeButton.classList.toggle('view')
         })
         closeButton.addEventListener('click', () => {
-            //add hide class to toggleButton using javascript
-            toggleButton.classList.add("view")
-            navLinks.classList.remove('responsive')
-            closeButton.classList.add('hide')
+            toggleButton.classList.toggle('hide')
+            navLinks.classList.toggle('active')
+            closeButton.classList.toggle('view')
         })
     </script>
 </body>

@@ -112,6 +112,7 @@ nav {
 }
 .main-nav {
   justify-content: space-between;
+  position: relative;
 }
 .nav-div {
   width: 25rem;
