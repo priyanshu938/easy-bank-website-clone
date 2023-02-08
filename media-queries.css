@@ -90,11 +90,6 @@
 }
 
 @media screen and (max-width: 479px) {
-  .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding-block: 1 rem;
-  }
   .heading {
     font-size: 2rem;
   }
